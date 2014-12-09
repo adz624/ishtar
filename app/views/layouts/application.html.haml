@@ -3,9 +3,11 @@
   %head= render 'common/head'
   %body
     = yield :banner
+    = render 'common/header'
     .container
       .push-xs
       = notice_message
       = render_breadcrumb unless current_page?(root_path)
       = yield
+    = render 'common/footer'
     = yield :javascripts
