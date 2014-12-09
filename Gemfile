@@ -90,12 +90,6 @@ gem 'slack-notifier'
 gem "pry-rails"
 gem "awesome_print", require: false
 
-if ENV['CI'].nil?
-  gem 'gambo', git: 'git@gitlab.dev.visionbundles.com:gameteam/gambo.git', branch: 'develop'
-else
-  gem 'gambo', git: 'http://gitlab-ci-token:4419c1fb6d4c87b3586260367030f2@gitlab.dev.visionbundles.com/gameteam/gambo.git', branch: 'develop'
-end
-
 gem 'visionbundles', github: 'afunction/visionbundles'
 
 group :production do
