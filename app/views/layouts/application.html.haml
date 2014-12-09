@@ -1,0 +1,11 @@
+!!!
+%html
+  %head= render 'common/head'
+  %body
+    = yield :banner
+    .container
+      .push-xs
+      = notice_message
+      = render_breadcrumb unless current_page?(root_path)
+      = yield
+    = yield :javascripts
