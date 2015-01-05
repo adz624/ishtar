@@ -90,6 +90,7 @@ gem 'slack-notifier'
 gem "pry-rails"
 gem "awesome_print", require: false
 
+gem 'carrierwave'
 gem 'visionbundles', github: 'afunction/visionbundles'
 
 group :production do
